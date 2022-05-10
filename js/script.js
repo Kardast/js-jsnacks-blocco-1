@@ -67,10 +67,24 @@ console.log(levelOne);
 for (let i = 0; i < arrayOne.length; i++) {
     
     const newLi = document.createElement("li");
+    const newUl = document.createElement("ul");
+
     console.log(newLi);
+    console.log(newUl);
+
 
     levelOne.append(newLi);
     newLi.append(arrayOne[i]);
+    newLi.append(newUl);
+
+    for (let iTwo = 0; iTwo < arrayTwo.length; iTwo++) {
+        
+        const newLiTwo = document.createElement("li");
+        console.log("questo è", newLiTwo);
+
+        newUl.append(newLiTwo);
+        newLiTwo.append(arrayTwo[iTwo]);
+    }
 }
 
 
