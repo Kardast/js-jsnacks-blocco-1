@@ -1,0 +1,27 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Snack - 2 */
+/* #red{
+    color: red;
+}
+
+#green{
+    color:  green;
+}
+
+.title{
+    background-color: rgb(52, 127, 189);
+}
+
+li{
+    background-color: rgb(129, 194, 194);
+} */
+
+#prova{
+    color:  blue;
+}
