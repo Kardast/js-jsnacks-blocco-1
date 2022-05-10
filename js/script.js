@@ -70,16 +70,17 @@ for (let i = 0; i < arrayOne.length; i++) {
     `
     <li>
         ${arrayOne[i]}
-        <ul id="prova">
+        <ul class="prova">
         </ul>
     </li>
     `;
 }
 
-const levelTwo = document.getElementById("prova");
+const levelTwo = document.querySelectorAll("ul.prova");
 console.log(levelTwo);
 
 for (let iTwo = 0; iTwo < arrayTwo.length; iTwo++) {
+    console.log(iTwo);
     
     levelTwo.innerHTML += 
     `
@@ -87,4 +88,5 @@ for (let iTwo = 0; iTwo < arrayTwo.length; iTwo++) {
         ${arrayTwo[iTwo]}
     </li>
     `;
+    console.log(levelTwo);
 }
