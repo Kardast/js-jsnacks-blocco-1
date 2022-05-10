@@ -66,27 +66,38 @@ console.log(levelOne);
 
 for (let i = 0; i < arrayOne.length; i++) {
     
-    levelOne.innerHTML += 
-    `
-    <li>
-        ${arrayOne[i]}
-        <ul class="prova">
-        </ul>
-    </li>
-    `;
+    const newLi = document.createElement("li");
+    console.log(newLi);
+
+    levelOne.append(newLi);
+    newLi.append(arrayOne[i]);
 }
 
-const levelTwo = document.querySelectorAll("ul.prova");
-console.log(levelTwo);
 
-for (let iTwo = 0; iTwo < arrayTwo.length; iTwo++) {
-    console.log(iTwo);
+// for (let i = 0; i < arrayOne.length; i++) {
     
-    levelTwo.innerHTML += 
-    `
-    <li>
-        ${arrayTwo[iTwo]}
-    </li>
-    `;
-    console.log(levelTwo);
-}
+//     levelOne.innerHTML += 
+//     `
+//     <li>
+//         ${arrayOne[i]}
+//         <ul class="prova">
+            
+//         </ul>
+//     </li>
+//     `;
+// }
+
+// const levelTwo = document.querySelector("ul.prova");
+// console.log(levelTwo);
+
+// for (let iTwo = 0; iTwo < arrayTwo.length; iTwo++) {
+//     console.log(iTwo);
+    
+//     levelTwo.innerHTML += 
+//     `
+//     <li>
+//         ${arrayTwo[iTwo]}
+//     </li>
+//     `;
+//     console.log(levelTwo);
+// }
